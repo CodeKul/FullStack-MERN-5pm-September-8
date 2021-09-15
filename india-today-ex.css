@@ -5,3 +5,28 @@ header{
 #indiatdy{
     color: red;
 }
+
+li{
+    display: inline;
+}
+
+nav{
+  
+    color: white;
+}
+
+.container{
+    height: 400px;
+    width: 400px;
+
+    background-color: chartreuse;
+}
+
+ul{
+    background-color: brown;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0;
+    padding: 10px;
+    border: solid 2px black;
+}
