@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+    https://www.oreilly.com/library/view/flexbox-in-css/9781491981474/ch04.html-->
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        border: solid 2px black;
+        padding: 10px;
+      }
+      .column {
+        border: solid 2px red;
+        height: 300px;
+        width: 300px;
+      }
+
+      .column-1 img {
+        height: 600px;
+        width: 600px;
+      }
+      .column-2 img, .column-3 img{
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column column-1">
+        <img src="../resources/4.jpg" alt="" />
+      </div>
+      <div class="column column-2">
+        <div><img src="../resources/4.jpg" alt="" /></div>
+        <div><img src="../resources/4.jpg" alt="" /></div>
+      </div>
+      <div class="column column-3">
+        <div><img src="../resources/4.jpg" alt="" /></div>
+        <div><img src="../resources/4.jpg" alt="" /></div>
+      </div>
+    </div>
+  </body>
+</html>
