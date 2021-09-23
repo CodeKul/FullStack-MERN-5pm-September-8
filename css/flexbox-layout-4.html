@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+    
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+-->
+
     <!-- align content vs align items 
     justify content vs justify items -->
     <style>
+
+/* justify-content -> alignment and positioning of elements in horizontal axis 
+align-items -> alignment and positioning of elements in vertical axis 
+*/
+
         .container{
             display: flex;
             border: solid 2px black;
+            width: 700px;
             height: 600px;
-            align-items: center;
-            justify-content: center;
+            align-items:flex-start;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+           
             
             
         }
