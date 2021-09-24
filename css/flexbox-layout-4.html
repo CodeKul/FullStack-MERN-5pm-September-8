@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
@@ -11,44 +11,41 @@
     https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
 -->
 
-    <!-- align content vs align items 
-    justify content vs justify items -->
-    <style>
+    <!-- align content vs align items vs align self 
+    justify content vs justify items vs justify-self 
 
-/* justify-content -> alignment and positioning of elements in horizontal axis 
+
+why there is a large space between two rows when using flex-wrap-->
+    <style>
+      /* justify-content -> alignment and positioning of elements in horizontal axis 
 align-items -> alignment and positioning of elements in vertical axis 
 */
 
-        .container{
-            display: flex;
-            border: solid 2px black;
-            width: 700px;
-            height: 600px;
-            align-items:flex-start;
-            justify-content: space-around;
-            flex-wrap: nowrap;
-           
-            
-            
-        }
+      .container {
+        display: flex;
+        border: solid 2px black;
+        flex-direction: column;
+        height: 600px;
+       align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
 
-        .flex-items{
-            border: solid 2px red;
-            height: 100px;
-            width: 100px;
-        }
+      .flex-items {
+        border: solid 2px red;
+        height: 100px;
+        width: 100px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <div class="container">
-        <div class="flex-items">One</div>
-        <div class="flex-items">Two</div>
-        <div class="flex-items">Three</div>
-        <div class="flex-items">Four</div>
-        <div class="flex-items">Five</div>
-
+      <div class="flex-items">One</div>
+      <div class="flex-items">Two</div>
+      <div class="flex-items">Three</div>
+      <div class="flex-items">Four</div>
+      <div class="flex-items">Five</div>
     </div>
-</body>
+  </body>
 </html>
