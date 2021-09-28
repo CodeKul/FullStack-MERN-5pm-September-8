@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            color: aliceblue;
+
+
+           
+        }
+
+        .container:hover{
+            /* transform: translateY(400px);
+            transform: rotateY(180deg); */
+            transform: scaleY(2) translateX(400px) rotateX(180deg);
+            transition-duration: 5s;
+        }
+
+
+        span{
+            float: right;
+        }
+
+
+        span:hover{
+            transform: translateX(-1200px);
+            transition-duration: 5s;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+<h1>Codekul</h1>
+    </div>
+
+    <span>Codekul</span>
+</body>
+</html>

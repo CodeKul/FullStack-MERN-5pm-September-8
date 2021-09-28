@@ -8,10 +8,13 @@
     <style>
         .container{
             display: grid;
-            grid-template-columns: 300px 200px 200px;
+            grid-template-columns: 100px 100px 100px;
             grid-template-rows: 200px 200px;
             gap: 10px;
 
+
+           
+            align-items: center;
         }
 
         .grid-items, .container{
@@ -20,8 +23,11 @@
 
         .one{
         
-            grid-row-start: 1;
+            grid-row-start: 2;
             grid-row-end: 3;
+
+            grid-column-start:3 ;
+            grid-column-end: 4;
         }
     </style>
 </head>
@@ -33,6 +39,14 @@
         <div class="grid-items three">Three</div>
         <div class="grid-items four">Four</div>
         <div class="grid-items five">Five</div>
+
+
+        <div class="grid-items one">One</div>
+        <div class="grid-items two">Two</div>
+        <div class="grid-items three">Three</div>
+        <div class="grid-items four">Four</div>
+        <div class="grid-items five">Five</div>
+
 
     </div>
 </body>
