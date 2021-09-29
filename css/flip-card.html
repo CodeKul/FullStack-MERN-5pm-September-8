@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- https://freefrontend.com/css-flip-cards/ -->
+
+    <style>
+        .container{
+            height: 300px;
+            width: 300px;
+        }
+
+        .container{
+            perspective: 100px;
+            position: relative;
+            left: 500px;
+            top: 350px;
+           
+        }
+
+        .card{
+            transform-style: preserve-3d;
+        }
+
+        .front-card, .back-card{
+            height: 300px;
+            width: 300px;
+
+            backface-visibility: hidden;
+
+            position: absolute;
+        }
+
+        .front-card{
+            background-color: blueviolet;
+         
+        }
+
+        .back-card{
+            background-color: brown;
+         
+           
+        }
+
+        .container:hover .card{
+            transform: rotateX(-180deg);
+            transition-duration: 10s;
+        }
+
+
+        .back-card{
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front-card">
+
+            </div>
+            <div class="back-card">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
