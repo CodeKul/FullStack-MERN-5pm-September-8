@@ -10,7 +10,15 @@
 
     <!-- read about required attribute, restriction attributes like max, min, maxlength, minlength 
     pattern, fieldset, size attribute, datalist, read only attribute, disabled, input element type file 
-animation in css-->
+animation in css
+
+
+first name, last name 
+email, number, city, dob, upload profile photo, upload documents, 
+gender,  languages
+
+
+-->
     
     <form>
         <label for="fname">Full Name</label>
@@ -47,7 +55,22 @@ animation in css-->
             <option value="1">HTML</option>
             <option value="2">CSS</option>
             <option value="3">Javascript</option>
-        </select>
+        </select> <br>
+
+
+        <input list="city" type="text">
+
+        <datalist id="city">
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="banglore">Banglore</option>
+        </datalist> <br>
+
+
+        <input type="file" accept="application/pdf" name="" id="">
+
+
+
         
 
         <input type="submit" value="Login">

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            left: 500px;
+            top: 200px;
+
+            border-radius: 100%;
+
+            /* box-shadow: 10px 10px 20px 0px darkred; */
+
+            animation-name: pulse;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes pulse {
+
+            0% {transform: scale(0.90); box-shadow: 0px 0px 0px 0px lightblue;}
+
+            50% {transform: scale(1); box-shadow: 0px 0px 10px 20px rgb(169, 169, 218);}
+
+            100% {transform: scale(0.90); box-shadow: 0px 0px 0px 0px darkcyan;}
+            
+        }
+    </style>
+</head>
+<body>
+
+
+    
+    
+    <div class="container">
+
+    </div>
+</body>
+</html>
