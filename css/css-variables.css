@@ -1,0 +1,18 @@
+/* for declaring css variable use --variable-name: value */
+/* for using css variable for elements use var (variable-name) */
+
+/* whatever the css variables you declare in root element selector are global scope variables 
+if css variables are declared inside a specific element so that variable will be block scope within that element */
+
+:root{
+    --primary-color: rgb(167, 124, 124);
+   
+    --theme-color: #F4DF4EFF
+}
+
+section{
+    --secondary-color: red;
+    background-color: var(--theme-color), greenyellow;
+    color: var(--secondary-color);
+}
+
