@@ -1,0 +1,58 @@
+
+/* type selector - element name */
+h2{
+    color: blue;
+}
+
+
+/* class selector 
+syntax - .classname{css stmts}
+syntax - element-name.classname{css stmts} */
+/* p.section-3-head{
+    color: blueviolet;
+} */
+
+
+/* id selector 
+syntax - #idname{css stmts} 
+syntax - element-name#idname{css stmts} */
+h2#sec3{
+    color: cadetblue;
+}
+
+/* selectors which use relation between 2 elements to target a specific element 
+such selectors are known as combinators
+
+child selector
+descendent selector 
+sibling selector (general sibling, adjacent sibling)
+
+*/
+
+/* child selector 
+syntax - parent element > child element */
+section > p{
+    color: darkgoldenrod;
+}
+
+/* descendent selector 
+syntax - main-parent/parent-element element */
+
+/* section.one p{
+    color: darkgreen;
+} */
+
+
+/* general sibling selector 
+syntax sibling1 ~ sibling2
+all sibling2 will be selected which comes after h2*/
+h2 ~ p{
+    color: deeppink;
+}
+
+/* adjacent sibling selector 
+syntax sibling1 + sibling2 
+only such sibling2 element will be targeted which comes directly next/adjacent to sibling1 element*/
+h2 + p{
+    color: gold;
+}
