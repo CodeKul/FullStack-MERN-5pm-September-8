@@ -53,6 +53,129 @@ h2 ~ p{
 /* adjacent sibling selector 
 syntax sibling1 + sibling2 
 only such sibling2 element will be targeted which comes directly next/adjacent to sibling1 element*/
-h2 + p{
+/* h2 + p{
     color: gold;
+}
+
+
+[href="https://www.google.com"]{
+    font-size: 40px;
+    color: chartreuse;
+}
+
+section p[title]{
+    color: chocolate;
+}
+
+[href^="https"]{
+    color: cornflowerblue;
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+[href$="gov.in/"]{
+    color: rgb(237, 100, 225);
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+[href*="india"]{
+    color: rgb(100, 237, 118);
+    font-size: 50px;
+    font-style: italic;
+}
+
+[class~="four"]{
+    background-color: blue;
+}
+
+[class|="Section" i]{
+    background-color: darkgreen;
+} */
+
+
+/* syntax -> element-name : pseudo-class-selector{css stmts} */
+
+/* a:hover{
+    color: gold;
+}
+div:hover{
+    background-color: brown;
+    color: aliceblue;
+}
+
+
+input:focus{
+    border: solid 2px red;
+    background-color: gray;
+    color: yellow;
+} */
+
+a:link{
+    color: red ;
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    color: rgb(71, 129, 255);
+}
+
+
+p:first-child{
+    background-color: black;
+    color: yellow;
+}
+
+p:last-child{
+    background-color: rgb(77, 150, 160);
+    color: rgb(82, 82, 28);
+}
+
+/* p:nth-child(3){
+    background-color: teal;
+    color: aliceblue;
+} */
+
+/* p:nth-last-child(2){
+    font-size: 50px;
+    font-style: italic;
+    color: gray;
+}
+
+p:only-child{
+    background-color: aqua;
+    color: red;
+}
+
+p:first-of-type{
+    background-color: blue;
+    color: aliceblue;
+}
+
+p:last-of-type{
+    background-color: rgb(0, 255, 128);
+    color: aliceblue;
+}
+
+p:nth-of-type(2){
+    background-color: rgb(255, 174, 0);
+    color: aliceblue;
+} */
+
+p:only-of-type{
+    background-color: rgb(0, 119, 255);
+    color: rgb(186, 86, 211);
+}
+
+input:checked{
+    box-shadow: 4px 2px 10 20px chartreuse;
+}
+
+:root{
+    background-color: darkgoldenrod;
 }
