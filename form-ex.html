@@ -19,17 +19,36 @@ gender,  languages
 
 
 -->
+
+<!-- regular expressions 
+
+// regex for a basic password must be
+// more than 8 chars 
+const PASSWORD_REGEX_1=  /^[A-Za-z0-9]\w{8,}$/;
+
+// more secure regex password must be
+// more than 8 chars 
+// at least one number
+const PASSWORD_REGEX_2 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+// more secure regex password must be :
+// more than 8 chars  
+// at least one number
+// at least one special character
+const PASSWORD_REGEX_3=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/; -->
+
     
-    <form>
+    <form autocomplete="off">
         <label for="fname">Full Name</label>
-        <input id="fname" placeholder="Full Name" type="text"> <br>
+        <input required minlength="6" maxlength="10" id="fname" placeholder="Full Name" type="text"> <br>
 
         <label for="email">Email</label>
-        <input id="email" placeholder="xyz@gmail.com" type="email"> <br>
-        <input placeholder="password" type="password"> <br>
-        <input placeholder="age" type="number"> <br>
+        <input size="100"  autocomplete="on" id="email" placeholder="xyz@gmail.com" type="email"> <br>
+        <input pattern="/^[A-Za-z0-9]\w{8,}$/" placeholder="password" type="password"> <br>
+        <input min="18" max="60"  placeholder="age" type="number"> <br>
 
 
+        <input pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="777-777-7777" type="tel" name="phone" id="phone">
         <label for="gender">Gender</label>
         <input name="gender" type="radio">
         <label for="male">Male</label>

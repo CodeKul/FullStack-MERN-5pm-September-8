@@ -179,3 +179,17 @@ input:checked{
 :root{
     background-color: darkgoldenrod;
 }
+
+
+p::first-letter{
+    font-size: 50px;
+    color: red;
+}
+
+p::first-line{
+    background-color: aqua;
+}
+
+li::after{
+    content: "$";
+}
