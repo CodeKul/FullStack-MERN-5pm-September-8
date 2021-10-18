@@ -18,7 +18,7 @@ console.log(PI)
 // 3.using the variable
 
 
-// write a code for calculating total marks, percentage and grade of a student
+// write a code for calculating total marks, percentage and grade of a student operators
 
 // https://www.youtube.com/watch?v=Fnlnw8uY6jo
 // https://www.youtube.com/watch?v=BNC6slYCj50
