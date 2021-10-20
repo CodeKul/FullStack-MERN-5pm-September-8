@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <script>
+// create a form to enter student marks - two input fields marks obtained and out of.
+// submit button 
+// display result button.
+// whenever you are clicking on display result button it will calculate total marks, total percentage, grade/class and display it on browser.
 
-         // operators -
-        // 1. arithmatic operators   +, -, /, *, %, ++, -- (post increment/decr, pre increment/dec)
-        // 2. relational operators   <, >, ==, <=, >=, ===
-        // 3. logical operators       &&, ||, !
-        // 4. ternary operator
-
-
-        let num1 = 15;
-        let num2 = 55;
-
-        console.log("Addidtion:", num1+num2)
-
-        //document.write("Substraction:", num1-num2)
-
-        console.log(num1*num2);
-
-        console.log("division", num1/num2);
-
-        console.log("Modulus", 10%20)
+      // operators -
+      // 1. arithmatic operators   +, -, /, *, %, ++, -- (post increment/decr, pre increment/dec)
+      // 2. relational operators   <, >, ==, <=, >=, ===
+      // 3. logical operators       &&, ||, !
+      // 4. ternary operator        (condition) ? "if true statement" : "if false statement"
 
 
-        // document.write(++num1)   //pre increment
-        // console.log(num1)
+      // https://designcode.io/react-hooks-handbook-conditional-rendering
 
-        document.write(num2--)   //post increment
-        console.log(num2)
+      let num1 = 15;
+      let num2 = 55;
 
-       
+      console.log("Addidtion:", num1 + num2);
 
-        console.log("Equal", num1==="15")  //strict equality operator - checks values as well as data type
+      //document.write("Substraction:", num1-num2)
 
-        console.log(num1 >= "15") //less than greater than checks two conditions
+      console.log(num1 * num2);
 
-        console.log(num1 !== "15")
+      console.log("division", num1 / num2);
 
-        console.log("And operator:" , true && false)
-       
+      console.log("Modulus", 10 % 20);
+
+      // document.write(++num1)   //pre increment
+      // console.log(num1)
+
+      document.write(num2--); //post increment
+      console.log(num2);
+
+      console.log("Equal", num1 === "15"); //strict equality operator - checks values as well as data type
+
+      console.log(num1 >= "15"); //less than greater than checks two conditions
+
+      console.log(num1 !== "15");
+
+      console.log("And operator:", true && false);
+
+      console.log(true && false);
+
+      console.log(false || true);
+
+      let a2 = true;
+      console.log(!a2);
+
+      let b5 = 10;
+      b5+=5
+      console.log(b5)
+
+      let k2 = true;
+      k2&&=false;
+      console.log(k2)
     </script>
-</body>
+  </body>
 </html>
