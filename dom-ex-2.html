@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>DOM Basics</h1>
+
+    <div class="container">
+      <div class="sports">
+        <h2>Cricket</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error
+          est nihil officiis nemo obcaecati, ut perferendis vel maiores
+          distinctio reiciendis exercitationem hic iste facilis voluptatibus
+          cupiditate beatae voluptate debitis.
+        </p>
+      </div>
+    </div> -->
+
+    <button onmouseenter="displayData()">Create Data</button>
+
+    <script>
+      function displayData() {
+        let body = document.body;
+
+        let title = document.createElement("h1");
+
+        let div1 = document.createElement("div");
+
+        let div2 = document.createElement("div");
+
+        let p = document.createElement("p");
+
+        let h2 = document.createElement("h2");
+
+        // (parent-element/node).appendChild(new element)
+
+        body.appendChild(title);
+        body.appendChild(div1);
+        div1.appendChild(div2);
+        div2.appendChild(h2);
+        div2.append(p);
+
+        title.append("DOM Basics");
+
+        h2.append("Cricket");
+
+        p.append(
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error est nihil officiis nemo obcaecati, ut perferendis vel maiores distinctio reiciendis exercitationem hic iste facilis voluptatibus cupiditate beatae voluptate debitis."
+        );
+      }
+    </script>
+  </body>
+</html>

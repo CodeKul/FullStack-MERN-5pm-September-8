@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">Full Name</label>
+        <input id="fname" type="text"> <br>
+
+        <label for="maths">Maths</label>
+        <input id="maths" type="number"> <br>
+
+        <label for="cn">Computer Networks</label>
+        <input id="cn" type="number"> <br>
+
+        <label for="sp">System Programming</label>
+        <input id="sp" type="number"> <br>
+
+        <label for="mc">Mico-Controllers</label>
+        <input id="mc" type="number"> <br>
+
+        <!-- <button>Submit</button> -->
+        <button type="button" onclick="displayResult()">Display Result</button>
+
+    </form>
+
+
+    <script>
+        function displayResult(){
+
+            let fullname = document.getElementById("fname").value;
+            let maths = document.getElementById("maths").value
+            let compnetworks = document.getElementById("cn").value
+            let syspro = document.getElementById("sp").value
+            let microControllers = document.getElementById("mc").value
+     
+            let totalMarks = parseFloat(maths) + parseFloat(compnetworks)+ parseFloat(syspro)+ parseFloat(microControllers);
+            console.log(totalMarks)
+        }
+    </script>
+</body>
+</html>
