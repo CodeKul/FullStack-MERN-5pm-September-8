@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D -->
+    <!-- https://www.youtube.com/watch?v=8aGhZQkoFbQ -->
+
+    
+    <button type="button" onclick="showResult()">show result</button>
+    <p id="result"></p>
+
+    <script>
+
+        function showResult() {
+            //document.write(userList)
+           // document.getElementById("result").innerHTML = userList;
+
+            let percentage = 35
+
+        if(percentage > 50 && percentage <60) {
+            document.getElementById("result").innerHTML = "Second Class";
+        } 
+        else {
+            document.getElementById("result").innerHTML = "Failed";
+        }
+        }
+        let userList = ["Sanket", "Swapnil", "Vaibhav", "Akshay", "Ankita"]
+
+        let numbers = [10,20,30,44,55,75]
+
+        
+       
+
+        
+
+        userList.push("Dhanashree")
+
+        userList.push("Pratik", "Payal", "Sonali", 500)
+
+        console.log(userList)
+
+        console.log(userList.pop())
+        console.log(userList)
+
+        console.log(numbers.find((element) => element > 20))
+
+        console.log(numbers.filter((element) => element > 20))
+
+    </script>
+</body>
+</html>
