@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // https://www.divami.com/blog/top-ecmascript-es6-features-every-javascript-developer-should-know/
+
+      let numbers = [10, 20, 30, 44, 55, 75];
+
+      numbers.forEach((item) => {
+        console.log(item);
+      });
+
+      numbers.map((item) => {
+        console.log(item);
+      });
+
+      // i+=1  i=i+1
+
+      for (var i = 0; i < 10; i++) {
+        console.log("i:", (i += 1));
+      }
+
+      for (var i = 0; i < numbers.length; i++) {
+        console.log(numbers[i]);
+      }
+
+      //for-of and for-in loops
+
+      for (let item of numbers) {
+        console.log(`array-element-${numbers.indexOf(item)}:`, item);
+      }
+
+      
+    </script>
+  </body>
+</html>
