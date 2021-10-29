@@ -31,11 +31,22 @@
       }
 
       //for-of and for-in loops
-
+      // for-of loop is used whenever you are iterating over an array 
+      // for-in loop is used whenever you are iterating over an object
       for (let item of numbers) {
         console.log(`array-element-${numbers.indexOf(item)}:`, item);
       }
 
+
+      let users = {
+        name:"sanket", 
+        city: "pune",
+        designation:"swe"
+      }
+
+      for (let item in users){
+        console.log(`${item} - ${users[item]}`)
+      }
       
     </script>
   </body>
