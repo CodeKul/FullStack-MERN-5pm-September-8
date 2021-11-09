@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      setTimeout(() => {
+        console.log("Codekul");
+      }, 3000);
+
+      function displayHello() {
+        console.log("Functions");
+        //alert("Functions");
+        return true;
+      }
+
+      // promise chaining, promises, callback functions, fetch
+
+      //   let add = function () {
+      //     let a = 10;
+      //     let b = 20;
+      //     console.log(a + b);
+      //     return a + b;
+      //   };
+
+      //console.log(displayHello())
+      // console.log(add())
+
+      let add = (a, b) => {
+        console.log(a + b);
+      };
+
+      setTimeout(()=> {add(50, 60)}, 4000);
+
+      add(110, 50000);
+
+      (() => {
+        console.log("anonymous arrow function");
+      })();
+
+      displayHello();
+      //add()
+    </script>
+  </body>
+</html>
