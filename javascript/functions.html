@@ -18,6 +18,8 @@
         return true;
       }
 
+      // https://www.bmc.com/blogs/callback-hell/
+
       // promise chaining, promises, callback functions, fetch
 
       //   let add = function () {
@@ -44,6 +46,57 @@
 
       displayHello();
       //add()
+
+      function one (two, three){
+
+      }
+
+      function two(four, five){
+
+      }
+
+      function three(six, seven){
+        
+      }
+
+      function four(){
+
+      }
+
+      //promises
+
+      // let promiseObject = new Promise(()=> {
+
+      // })
+
+      // console.log(promiseObject)
+
+
+      function multiply(x,y) {
+            let output = x*y;
+            let promise = new Promise(function (resolve, reject) {
+                if (output > 0) {
+                    resolve(output)
+                } else {
+                    reject("Please try once more...")
+                }
+            })
+
+            return promise;
+        }
+
+        multiply(-1, -5).then(
+          function (output) {
+                // output = output +3000
+                console.log(output)
+                return output
+            }
+        ).catch(
+          console.log("Promise rejected")
+          
+        )
+
+
     </script>
   </body>
 </html>
