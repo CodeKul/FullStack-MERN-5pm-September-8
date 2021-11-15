@@ -7,18 +7,28 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- http://es6-features.org/#Constants
+     
+    https://www.javascripttutorial.net/es6/
+  
+  
+  https://www.javatpoint.com/es6
+-->
     <input id="name" type="text" />
 
-    <button type="button" onclick="addData()">Submit</button>
+    <button id="add" type="button">Submit</button>
 
     <script>
+      let button = document.getElementById("add");
+
+      button.addEventListener("click", () => {
         var nameData = document.getElementById("name").value;
 
-        function addData() {
-            let result = [];
-            result.push(nameData)
-            console.log(result)
-        }
+        let result = new Array(10);
+        console.log(nameData);
+        result.push(nameData);
+        console.log(result);
+      });
     </script>
   </body>
 </html>
