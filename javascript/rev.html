@@ -14,17 +14,23 @@
   
   https://www.javatpoint.com/es6
 -->
+
+<div class="container">
     <input id="name" type="text" />
 
     <button id="add" type="button">Submit</button>
-
+  </div>
     <script>
       let button = document.getElementById("add");
-
-      button.addEventListener("click", () => {
+      let result = new Array(10);
+      button.addEventListener("click", (e) => {
+        e.preventDefault;
         var nameData = document.getElementById("name").value;
+        //document.querySelector("")
+        document.getElementsByClassName("container")
+      console.log(document.querySelectorAll("div"));
 
-        let result = new Array(10);
+        
         console.log(nameData);
         result.push(nameData);
         console.log(result);

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="fullname">Full Name</label>
+      <input id="fullname" type="text" /> <br />
+
+      <label for="email">Email</label>
+      <input required id="email" type="email" /> <br />
+
+      <label for="password">Password</label>
+      <input pattern="[a-z][A-Z][0-9]" id="password" type="password" /> <br />
+
+      <!-- <label for="phone">Phone</label>
+        <input pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" type="tel"> <br> -->
+
+      <label for="phone">Phone</label>
+      <input id="phone" type="tel" /> <br />
+
+      <button id="btn" type="button">Register</button>
+    </form>
+
+    <script>
+      let phoneval = document.getElementById("phone").value;
+
+      let form = document.getElementById("myForm")
+
+      let button = document.getElementById("btn")
+
+      button.addEventListener("click", ()=> {
+        console.log(phoneval)
+        if (phoneval === "") {
+          console.log("error");
+        } else {
+          console.log(phoneval);
+        }
+      })
+
+
+    //   function validation() {
+    //       console.log(phoneval)
+    //     if (phone === "") {
+    //       document.write("error");
+    //     } else {
+    //       document.write(phoneval);
+    //     }
+    //   }
+    </script>
+  </body>
+</html>
