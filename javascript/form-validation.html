@@ -7,6 +7,11 @@
     <title>Document</title>
   </head>
   <body>
+
+    <!-- go through all html elements.
+    Type of elements - inline level elements, block level elements 
+    list down inline level elements as well as block level elements -->
+  
     <form id="myForm">
       <label for="fullname">Full Name</label>
       <input id="fullname" type="text" /> <br />
@@ -29,17 +34,33 @@
     <script>
       let phoneval = document.getElementById("phone").value;
 
+      let fname = document.getElementById("fullname").value; 
+
+
+
       let form = document.getElementById("myForm")
 
       let button = document.getElementById("btn")
 
       button.addEventListener("click", ()=> {
-        console.log(phoneval)
-        if (phoneval === "") {
-          console.log("error");
-        } else {
-          console.log(phoneval);
-        }
+        // console.log(phoneval)
+        // if (phoneval === "") {
+        //   console.log("error");
+        // } else {
+        //   console.log(phoneval);
+        // }
+
+        // input field should not be empty 
+        // full name should accept only alphabets 
+        // strong password (one uppercase character, lowercase character, number, special character)
+
+       let regex = new RegExp(/^[A-Za-z]+$/)
+       regex.test(fname)
+console.log(regex.test(fname))
+        if(regex.test(fname)){
+          console.log(fname)
+        } 
+     
       })
 
 
