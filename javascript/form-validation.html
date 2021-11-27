@@ -7,14 +7,13 @@
     <title>Document</title>
   </head>
   <body>
-
     <!-- go through all html elements.
     Type of elements - inline level elements, block level elements 
     list down inline level elements as well as block level elements -->
-  
-    <form id="myForm">
+
+    <form>
       <label for="fullname">Full Name</label>
-      <input id="fullname" type="text" /> <br />
+      <input id="fname" type="text" /> <br />
 
       <label for="email">Email</label>
       <input required id="email" type="email" /> <br />
@@ -28,21 +27,23 @@
       <label for="phone">Phone</label>
       <input id="phone" type="tel" /> <br />
 
-      <button id="btn" type="button">Register</button>
+      <button onclick="testregex()" id="btn" type="button">Register</button>
     </form>
 
     <script>
       let phoneval = document.getElementById("phone").value;
 
-      let fname = document.getElementById("fullname").value; 
+      let fname = document.getElementById("fname").value;
 
+      let form = document.getElementById("myForm");
 
+      let button = document.getElementById("btn");
 
-      let form = document.getElementById("myForm")
+      let regex = new RegExp("^[A-Za-z]$");
 
-      let button = document.getElementById("btn")
+      console.log(fname)
 
-      button.addEventListener("click", ()=> {
+      var testregex = () => {
         // console.log(phoneval)
         // if (phoneval === "") {
         //   console.log("error");
@@ -50,28 +51,30 @@
         //   console.log(phoneval);
         // }
 
-        // input field should not be empty 
-        // full name should accept only alphabets 
+        // input field should not be empty
+        // full name should accept only alphabets
         // strong password (one uppercase character, lowercase character, number, special character)
 
-       let regex = new RegExp(/^[A-Za-z]+$/)
-       regex.test(fname)
-console.log(regex.test(fname))
-        if(regex.test(fname)){
-          console.log(fname)
-        } 
-     
-      })
+       
+        regex.test(fname);
+        console.log(fname);
+        if (regex.test(fname)) {
+          console.log(fname);
+        } else {
+          console.log("Add just Alphabetical Characters")
+        }
+        console.log(regex.test(fname));
+        
+      };
 
-
-    //   function validation() {
-    //       console.log(phoneval)
-    //     if (phone === "") {
-    //       document.write("error");
-    //     } else {
-    //       document.write(phoneval);
-    //     }
-    //   }
+      //   function validation() {
+      //       console.log(phoneval)
+      //     if (phone === "") {
+      //       document.write("error");
+      //     } else {
+      //       document.write(phoneval);
+      //     }
+      //   }
     </script>
   </body>
 </html>
