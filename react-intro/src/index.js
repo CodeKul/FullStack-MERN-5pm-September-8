@@ -7,7 +7,8 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <h1>React Library...</h1>
+    {/* <h1>React Library...</h1>
+    <h1>Index Component</h1> */}
     {/* <h1>Frontend framework</h1> */}
     {/* <h1>Index component</h1> */}
   </React.StrictMode>,

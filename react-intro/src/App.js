@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Counter from './components/Counter';
+
 
 
 // React Dom, Virtual Dom, Working of React Application
@@ -9,9 +11,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Codekull... 
+      {/* Codekull... 
       <h1>Javascript is BEST...</h1>
+      <h1>App Component</h1>
+      <h1>React World</h1>
+
+      <FirstComponent/> */}
       {/* <h1>App component</h1> */}
+
+      <Counter/>
          </div>
   );
 }
