@@ -2,11 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 import Counter from './components/Counter';
+import CounterFunc from './components/CounterFunc';
+import Form from './components/Form';
 
 
 
 // React Dom, Virtual Dom, Working of React Application
 // what is the difference between real dom and virtual dom
+// https://blog.logrocket.com/react-hooks-cheat-sheet-unlock-solutions-to-common-problems-af4caf699e70/
+// https://medium.com/swlh/building-controlled-forms-using-functional-components-in-react-965d033a89bd
+
 
 function App() {
   return (
@@ -20,6 +25,10 @@ function App() {
       {/* <h1>App component</h1> */}
 
       <Counter/>
+
+      <CounterFunc/>
+
+      <Form/>
          </div>
   );
 }
