@@ -4,6 +4,8 @@ import './App.css';
 import Counter from './components/Counter';
 import CounterFunc from './components/CounterFunc';
 import Form from './components/Form';
+import Form2 from './components/Form2';
+import HelloMessage from './components/HelloMessage';
 
 
 
@@ -24,11 +26,19 @@ function App() {
       <FirstComponent/> */}
       {/* <h1>App component</h1> */}
 
+      <HelloMessage name="Sanket"/>
+
+      <HelloMessage name="Sonali"/>
+
+      <HelloMessage name="Pratik"/>
+
       <Counter/>
 
       <CounterFunc/>
 
       <Form/>
+
+      {/* <Form2/> */}
          </div>
   );
 }
