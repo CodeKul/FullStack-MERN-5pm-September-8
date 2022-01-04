@@ -4,13 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
+import { rootReducer } from './components/reducers/combineReducer';
+import { Provider } from 'react-redux';
 
-let store = createStore()
+let bankStore = createStore(rootReducer)
 
 ReactDOM.render(
-  <React.StrictMode>
-
+  <React.StrictMod
+    <Provider store={bankStore}>
     <App />
+
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
