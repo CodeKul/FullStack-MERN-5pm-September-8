@@ -1,14 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import { useRef } from 'react';
+import { createRef, useRef } from 'react';
 
+
+// 1. Redux
+// 2. React-redux
+// 3. Redux-Thunk
+// 4. Redux-Saga
+// 5. Redux-Toolkit
 function App() {
 
-  let InputRef = useRef();
+  let InputRef = createRef()
   let data = InputRef.current.value;
   return (
     <div className="App">
-      <h1>Counter : {}</h1>
+      <h1>Counter : {data}</h1>
 
       <input ref={InputRef} size="5"  type="range" name="" id="" />
 

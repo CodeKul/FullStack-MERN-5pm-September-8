@@ -13,6 +13,10 @@ function App() {
 <Dashboard/>
 
 
+<UserContext>
+  <UserProfile/>
+</UserContext>
+
       <UserContext>
         <UserProfile>
           <UserCity />

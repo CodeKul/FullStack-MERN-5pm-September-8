@@ -1,15 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import MusicContext from './components/MusicContext';
+import { MusicPlayerProvider } from './components/MusicPlayerContext';
 import TrackList from './components/TrackList';
+import PlayerControls from './components/PlayerControls';
 
 function App() {
   return (
     <div className="App">
-      <MusicContext>
-        <TrackList />
+      
 
-      </MusicContext>
+<MusicPlayerProvider>
+  <div className="container">
+    <TrackList/>
+    <PlayerControls/>
+  </div>
+</MusicPlayerProvider>
+
     </div>
   );
 }

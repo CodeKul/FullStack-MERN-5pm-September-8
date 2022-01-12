@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-nav{
-  background-color: black;
-  color: wheat;
-}
-
-li{
-display: inline;
-margin: 0 20px;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -46,3 +36,5 @@ margin: 0 20px;
     transform: rotate(360deg);
   }
 }
+
+
