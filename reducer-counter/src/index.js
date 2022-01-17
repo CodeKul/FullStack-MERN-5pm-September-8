@@ -3,23 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
-import { rootReducer } from './components/reducers/combineReducer';
-import { Provider } from 'react-redux';
-
-
-const dataStore = createStore(rootReducer)
-
-let x = dataStore.getState()
-
-console.log(x)
-
-console.log(dataStore)
 
 ReactDOM.render(
-  <Provider store={dataStore}>
+  <React.StrictMode>
     <App />
-  </Provider>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

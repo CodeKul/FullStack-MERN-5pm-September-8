@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { createRef, useRef } from 'react';
+import { useSelector } from 'react-redux';
+import { rootReducer } from './components/reducers/combineReducer';
+import { useDispatch } from 'react-redux';
+import { countReducer } from './components/reducers/counterreduce';
 
 
 // 1. Redux
@@ -10,15 +14,23 @@ import { createRef, useRef } from 'react';
 // 5. Redux-Toolkit
 function App() {
 
-  let InputRef = createRef()
-  let data = InputRef.current.value;
+
+  let stateData = useSelector((countReducer) => countReducer )
+  let dispatch = useDispatch()
+
+  console.log(stateData.count)
+
+ 
+
+  // let InputRef = createRef()
+  // let data = InputRef.current.value;
   return (
     <div className="App">
-      <h1>Counter : {data}</h1>
+      {/* <h1>Counter : {data}</h1>
 
-      <input ref={InputRef} size="5"  type="range" name="" id="" />
+      <input ref={InputRef} size="5" onChange={(e) => dispatch({ type: "update", payload: Number(e.target.value) })} type="range" name="" id="" />
 
-      {console.log(data)}
+      {console.log(data)} */}
     </div>
   );
 }
